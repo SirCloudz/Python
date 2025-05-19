@@ -16,8 +16,7 @@ scissors = 3
 pregunta_inicio = input("Escriba \"Jugar\" para iniciar a jugar: ")
 volver_empezar = "Volvamos a empezar"
 cont = 1
-pregunta = ''
-lista = []
+
 jugada_anterior = None
 # Para Iniciar el juego
 while True:
@@ -67,6 +66,7 @@ while True:
         while cont > 3:
             print('Quieres volver a empezar??')
             pregunta = input("SI / NO : ")
+            print()
             if pregunta.lower() == "si":
                 cont = 1
                 print(volver_empezar)
